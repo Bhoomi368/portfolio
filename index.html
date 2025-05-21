@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bhoomi Gupta Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
+  <style>
+    .nav-gradient {
+      background: linear-gradient(90deg, #7f8aff 0%, #a25fff 50%, #2bc0be 100%);
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+
+  <!-- Top left icon -->
+  <div class="p-2">
+    <i class="fas fa-th-large text-gray-700 text-xl"></i>
+  </div>
+
+  <!-- Navigation bar -->
+  <nav class="nav-gradient flex items-center justify-between px-6 py-3">
+    <div class="flex items-center space-x-3">
+      <div class="bg-[#a59fff] rounded-md w-10 h-10 flex items-center justify-center font-semibold text-white select-none">
+        BG
+      </div>
+      <span class="text-white font-normal text-base select-none">
+        BHOOMI GUPTA
+      </span>
+    </div>
+    <ul class="flex space-x-8 text-white font-semibold text-sm cursor-pointer select-none">
+      <li>About</li>
+      <li>Skills</li>
+      <li>Tracer</li>
+      <li>Projects</li>
+      <li>Contacts</li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <main class="max-w-4xl mx-auto px-6 mt-16 text-center">
+    <h1 class="text-purple-700 font-extrabold text-3xl sm:text-4xl md:text-5xl">
+      Hi, I'm BHOOMI GUPTA
+    </h1>
+    <p class="mt-6 text-gray-700 text-base sm:text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
+      I'm a passionate Student in National Post Graduate College, Lucknow.
+      I love turning complex problems into simple, beautiful, and intuitive
+      solutions. I am passionate to learn new things throughout my journey.
+    </p>
+  </main>
+
+  <!-- Gradient bar with circle -->
+  <section class="mt-20 relative max-w-5xl mx-auto px-6">
+    <div class="rounded-full h-24 sm:h-28 md:h-32 w-full"
+      style="background: linear-gradient(90deg, #d9c9f9 0%, #c7d9f9 50%, #b9f0ec 100%)"></div>
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-white w-36 h-36 bg-[#d9c9f9] shadow-lg flex items-center justify-center">
+      <span class="text-[10px] text-black select-none">file</span>
+    </div>
+  </section>
+
+  <!-- Professional Journey -->
+  <section class="max-w-6xl mx-auto px-6 pb-12 mt-20">
+    <div class="bg-white rounded-lg shadow-lg p-8 mb-12 text-center max-w-4xl mx-auto">
+      <h1 class="text-xl font-semibold text-gray-900 mb-4">Professional Journey</h1>
+      <p class="text-gray-700 mb-6 leading-relaxed">
+        I started my journey in BCA at NPGC from 2023, learning new things 
+        about technology. I'm continuing my journey with dedication and curiosity.
+      </p>
+      <p class="text-gray-700 leading-relaxed">
+        Currently, I'm focused on building modern web applications using React,
+        Node.js, and cloud technologies. I'm passionate about creating
+        solutions that not only look great but also perform exceptionally well.
+      </p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <article class="bg-white rounded-lg shadow-lg p-6 max-w-sm mx-auto sm:mx-0">
+        <h2 class="text-blue-600 font-semibold text-lg mb-3">Frontend Development</h2>
+        <p class="text-gray-700 leading-relaxed">
+          Creating beautiful and responsive user interfaces with React, Vue.js,
+          and modern CSS frameworks.
+        </p>
+      </article>
+      <article class="bg-white rounded-lg shadow-lg p-6 max-w-sm mx-auto sm:mx-0">
+        <h2 class="text-purple-600 font-semibold text-lg mb-3">Backend Development</h2>
+        <p class="text-gray-700 leading-relaxed">
+          Building robust and scalable server solutions with Node.js, Python,
+          and cloud services.
+        </p>
+      </article>
+      <article class="bg-white rounded-lg shadow-lg p-6 max-w-sm mx-auto sm:mx-0">
+        <h2 class="text-teal-700 font-semibold text-lg mb-3">UI/UX Design</h2>
+        <p class="text-gray-700 leading-relaxed">
+          Designing intuitive and engaging user experiences with a focus on
+          accessibility and performance.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="max-w-6xl mx-auto px-4 py-10">
+    <h2 class="text-center text-purple-700 font-semibold text-lg md:text-xl">My Skills</h2>
+    <p class="text-center text-gray-600 text-xs md:text-sm mt-1 max-w-md mx-auto">
+      A comprehensive overview of my technical expertise and professional capabilities
+    </p>
+    <div class="flex justify-center mt-6 space-x-4 text-gray-700 text-xs md:text-sm font-normal">
+      <button id="btnTechnical" class="bg-purple-700 text-white rounded-md px-4 py-2 shadow-md focus:outline-none">Technical Skills</button>
+      <button id="btnSoft" class="hover:text-purple-700">Soft Skills</button>
+    </div>
+    <section id="skillsContainer" class="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto"></section>
+  </section>
+
+  <!-- Beyond Coding Section -->
+  <section class="bg-[#f9fbfd] max-w-5xl mx-auto px-4 pb-20 mt-20">
+    <div class="bg-white rounded-lg shadow-md p-8 max-w-4xl mx-auto mt-6">
+      <h2 class="text-center text-gray-900 font-semibold mb-8">Beyond Coding</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-6 text-sm text-gray-700">
+        <div><h3 class="text-[#4c51bf] font-semibold mb-1">Open Source Contributor</h3><p>Active contributor to open-source projects.</p></div>
+        <div><h3 class="text-[#9f7aea] font-semibold mb-1">NSS Volunteer</h3><p>Also a NSS volunteer, ready to help others in every situation.</p></div>
+        <div><h3 class="text-[#319795] font-semibold mb-1">DBMS</h3><p>Dedicated for database management too, as having interest in it.</p></div>
+        <div><h3 class="text-[#4c51bf] font-semibold mb-1">Continuous Learning</h3><p>Always exploring new technologies to stay sharp.</p></div>
+      </div>
+    </div>
+    <div class="mt-10 rounded-lg max-w-4xl mx-auto p-8 text-center text-white" style="background: linear-gradient(90deg, #5a4de8 0%, #2aa79b 100%)">
+      <h3 class="font-semibold text-lg mb-2">Let's Work Together</h3>
+      <p class="text-xs max-w-xs mx-auto mb-6 leading-tight">I'm always open to discussing new projects or creative ideas.</p>
+      <button class="bg-white text-[#5a4de8] text-xs font-medium rounded px-4 py-2 hover:bg-gray-100 transition">Get in Touch</button>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-20">
+    <h1 class="text-center text-purple-600 font-semibold text-xl md:text-2xl mb-1">My Projects</h1>
+    <p class="text-center text-xs md:text-sm text-gray-700 mb-8">A showcase of all projects that I have made</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <!-- Project Card 1 -->
+      <article class="bg-white rounded-lg shadow-sm p-6 border border-transparent transition hover:shadow-lg hover:shadow-blue-400/50 hover:border-purple-600">
+        <h2 class="font-semibold text-gray-900 text-sm md:text-base mb-1">Weather App</h2>
+        <p class="text-xs text-gray-600 mb-3">A React app to check the weather.</p>
+        <div class="flex flex-wrap gap-2 mb-3">
+          <span class="bg-indigo-200 text-indigo-700 text-xs rounded-full px-3 py-1">React</span>
+          <span class="bg-indigo-200 text-indigo-700 text-xs rounded-full px-3 py-1">OpenWeather API</span>
+          <span class="bg-indigo-200 text-indigo-700 text-xs rounded-full px-3 py-1">Tailwind CSS</span>
+        </div>
+        <a href="#" class="text-indigo-700 text-xs flex items-center gap-1 hover:underline">View Project <i class="fas fa-external-link-alt text-[0.6rem]"></i></a>
+      </article>
+      <!-- Project Card 2 -->
+      <article class="bg-white rounded-lg shadow-sm p-6 border border-transparent transition hover:shadow-lg hover:shadow-blue-400/50 hover:border-purple-600">
+        <h2 class="font-semibold text-gray-900 text-sm md:text-base mb-1">To-Do List</h2>
+        <p class="text-xs text-gray-600 mb-3">A simple task manager.</p>
+        <div class="flex flex-wrap gap-2 mb-3">
+          <span class="bg-indigo-200 text-indigo-700 text-xs rounded-full px-3 py-1">React</span>
+          <span class="bg-indigo-200 text-indigo-700 text-xs rounded-full px-3 py-1">LocalStorage</span>
+          <span class="bg-indigo-200 text-indigo-700 text-xs rounded-full px-3 py-1">Tailwind CSS</span>
+        </div>
+        <a href="#" class="text-indigo-700 text-xs flex items-center gap-1 hover:underline">View Project <i class="fas fa-external-link-alt text-[0.6rem]"></i></a>
+      </article>
+      <!-- Project Card 3 -->
+      <article class="bg-white rounded-lg shadow-sm p-6 border border-transparent transition hover:shadow-lg hover:shadow-blue-400/50 hover:border-purple-600">
+        <h2 class="font-semibold text-gray-900 text-sm md:text-base mb-1">Portfolio Website</h2>
+        <p class="text-xs text-gray-600 mb-3">A modern portfolio website built with React and Tailwind CSS.</p>
+        <div class="flex flex-wrap gap-2 mb-3">
+          <span class="bg-indigo-200 text-indigo-700 text-xs rounded-full px-3 py-1">React</span>
+          <span class="bg-indigo-200 text-indigo-700 text-xs rounded-full px-3 py-1">Tailwind CSS</span>
+          <span class="bg-indigo-200 text-indigo-700 text-xs rounded-full px-3 py-1">Responsive Design</span>
+        </div>
+        <a href="#" class="text-indigo-700 text-xs flex items-center gap-1 hover:underline">View Project <i class="fas fa-external-link-alt text-[0.6rem]"></i></a>
+      </article>
+      <!-- Project Card 4 -->
+      <article class="bg-white rounded-lg shadow-sm p-6 border border-transparent transition hover:shadow-lg hover:shadow-blue-400/50 hover:border-purple-600">
+        <h2 class="font-semibold text-gray-900 text-sm md:text-base mb-1">E-commerce Platform</h2>
+        <p class="text-xs text-gray-600 mb-3">A full-stack e-commerce solution with user authentication.</p>
+        <div class="flex flex-wrap gap-2 mb-3">
+          <span class="bg-indigo-200 text-indigo-700 text-xs rounded-full px-3 py-1">React</span>
+          <span class="bg-indigo-200 text-indigo-700 text-xs rounded-full px-3 py-1">Node.js</span>
+          <span class="bg-indigo-200 text-indigo-700 text-xs rounded-full px-3 py-1">MongoDB</span>
+          <span class="bg-indigo-200 text-indigo-700 text-xs rounded-full px-3 py-1">Express</span>
+        </div>
+        <a href="#" class="text-indigo-700 text-xs flex items-center gap-1 hover:underline">View Project <i class="fas fa-external-link-alt text-[0.6rem]"></i></a>
+      </article>
+    </div>
+    <!-- Footer Start -->
+
+  </section>
+
+  <!-- JavaScript for Skills -->
+  <script>
+    const technicalSkills = [
+      { name: "Javascript", level: "Beginner", percent: 60 },
+      { name: "Nodejs", level: "Beginner", percent: 50 },
+      { name: "Tailwind CSS", level: "Beginner", percent: 50 },
+      { name: "Bootstrap", level: "Beginner", percent: 55 },
+      { name: "DBMS", level: "Intermediate", percent: 85 },
+      { name: "Cloud", level: "Intermediate", percent: 89 },
+    ];
+
+    const softSkills = [
+      { name: "Communication", level: "Expert", percent: 95 },
+      { name: "Teamwork", level: "Advanced", percent: 90 },
+      { name: "Problem Solving", level: "Intermediate", percent: 80 },
+      { name: "Adaptability", level: "Intermediate", percent: 75 },
+      { name: "Leadership", level: "Advanced", percent: 85 },
+      { name: "Time Management", level: "Advanced", percent: 88 },
+    ];
+
+    const skillsContainer = document.getElementById("skillsContainer");
+    const btnTechnical = document.getElementById("btnTechnical");
+    const btnSoft = document.getElementById("btnSoft");
+
+    function renderSkills(skills) {
+      skillsContainer.innerHTML = "";
+      skills.forEach(({ name, level, percent }) => {
+        const card = document.createElement("article");
+        card.className = "bg-white rounded-md shadow-sm p-4 border border-transparent hover:border-gray-200";
+        card.innerHTML = `
+          <h3 class="text-gray-700 font-semibold text-xs md:text-sm mb-1">${name}</h3>
+          <p class="text-gray-500 text-[9px] md:text-xs mb-2">${level}</p>
+          <div class="flex items-center justify-between text-purple-700 text-[9px] md:text-xs font-semibold mb-1">
+            <span></span><span>${percent}%</span>
+          </div>
+          <div class="w-full h-1 rounded-full bg-gray-200">
+            <div class="h-1 rounded-full" style="width: ${percent}%; background: linear-gradient(to right, #4c1d95, #0f766e)"></div>
+          </div>
+        `;
+        skillsContainer.appendChild(card);
+      });
+    }
+
+    function setActiveButton(activeBtn) {
+      if (activeBtn === "technical") {
+        btnTechnical.classList.add("bg-purple-700", "text-white", "shadow-md");
+        btnSoft.classList.remove("bg-purple-700", "text-white", "shadow-md");
+      } else {
+        btnSoft.classList.add("bg-purple-700", "text-white", "shadow-md");
+        btnTechnical.classList.remove("bg-purple-700", "text-white", "shadow-md");
+      }
+    }
+
+    btnTechnical.addEventListener("click", () => {
+      renderSkills(technicalSkills);
+      setActiveButton("technical");
+    });
+
+    btnSoft.addEventListener("click", () => {
+      renderSkills(softSkills);
+      setActiveButton("soft");
+    });
+
+    // Initial load
+    renderSkills(technicalSkills);
+    setActiveButton("technical");
+
+
+  </script>
+</body>
+</html>
